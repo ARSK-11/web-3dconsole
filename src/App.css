@@ -1,0 +1,255 @@
+#root {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.spline-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  /* pointer-events: none; */
+  border-left: 1px solid #06001062;
+  transition: width 1.2s cubic-bezier(0.77, 0, 0.175, 1); /* animasi smooth */
+}
+
+.spline-bg.shrink {
+  position: relative;
+  float: left;
+  width: 100vw;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 64px;
+}
+
+/* Navbar Transparan Grid 3 Kolom */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1300px;      /* Batas lebar navbar */
+  margin: 0 auto;         /* Tengah secara horizontal */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  /* background: rgba(0, 0, 0, 0.24); */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 0 0 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  padding: 12px 32px;
+  box-sizing: border-box;
+}
+
+.nav-brand h2 {
+  color: #060010;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.btn-right {
+  justify-self: end;
+}
+
+.nav-link {
+  color: #060010;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.nav-link:hover {
+  /* background: #060010; */
+  color: #060010;
+  border-radius: 20px;
+  border: 1px solid #060010;
+  transform: translateY(-2px);
+}
+
+/* Container agar konten tidak selalu di tengah */
+.container {
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  /* Hapus text-align: center jika ada */
+}
+
+.sp-1 {
+  text-align: left;
+  margin-top: 100px;
+  max-width: 600px;
+  padding: 10px 0px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px 10px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-right {
+    justify-self: center;
+  }
+}
+
+/* .jumbotron {
+  position: absolute; 
+} */
+/* iframe {
+  position: relative;
+} */
+
+.bg-content {
+  background-color: #FFEDEE;
+  width: 100%;
+  height: auto;
+  /* margin-top: 13%; */
+  border-top: 1px solid #06001062;
+  position: relative;
+  transition: filter 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.bg-content.blur {
+  filter: blur(16px);
+  transition: filter 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.icons-jb {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.btn-link {
+  border: 1px solid #06001062;
+  padding: 20px 40px;
+  font-size: 20px;
+}
+.btn-lc {
+  border: 1px solid #f7f7f762;
+  padding: 20px 40px;
+  font-size: 20px;
+  position: fixed;
+  justify-content: center;
+  top: 50%;
+  left: 47%;
+  /* Glassmorphism style */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+  color: whitesmoke;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.grid-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff6;
+  border-radius: 16px;
+  min-height: 400px;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #060010;
+}
+.flex {
+  display: flex;
+}
+.emoji1 {
+  position: absolute;
+  font-size: 100px;
+}
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 8px 0 8px;
+  }
+  .grid-right {
+    min-height: 200px;
+  }
+}

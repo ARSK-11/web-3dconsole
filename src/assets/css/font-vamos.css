@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Vamos';
+    src: url('../fonts/vamos-font/vamos.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vamos {
+    font-family: 'Vamos', sans-serif;
+} 
