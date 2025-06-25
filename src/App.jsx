@@ -106,7 +106,8 @@ function App() {
       {showContent && (
         <div className={`bg-content${contentBlur ? ' blur' : ''}`}>
           <div className="container roboto-mono-regular">
-            <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur saepe inventore, modi aperiam ut praesentium. Atque debitis at, necessitatibus rerum obcaecati alias, veritatis in, a iusto numquam nulla est!
+            <p data-aos="fade-up">
+            Welcome to the future of technology! Dive in and discover endless possibilities with our innovative platform. Unleash your creativity, connect with others, and shape the digital world. Let's explore together!
             </p>
             <br />
             <br />
